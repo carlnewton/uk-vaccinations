@@ -30,7 +30,7 @@ $.getJSON('https://coronavirus.data.gov.uk/api/v1/data?filters=areaType=overview
                     backgroundColor: [
                         '#8bc640',
                         '#ffbd00',
-                        '#ea4f5c'
+                        '#cccccc'
                     ]
                 }],
                 labels: [
