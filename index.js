@@ -148,6 +148,7 @@ function generateLineChart(canvas, dates, firstDoses, secondDoses) {
 }
 
 function median(values){
+    values = values.slice();
     values.sort(function(a, b){
         return a - b;
     });
