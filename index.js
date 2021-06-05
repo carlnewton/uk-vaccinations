@@ -17,7 +17,8 @@ $.getJSON('https://coronavirus.data.gov.uk/api/v1/data?filters=areaType=overview
 
         var firstDoseTotal = data.data[0].firstDose;
         var secondDoseTotal = data.data[0].secondDose;
-        var unvaccinatedTotal = ukPopulation - firstDoseTotal - secondDoseTotal;
+        var unvaccinatedTotal = ukPopulation - firstDoseTotal;
+
         var vaccinationPieChart = new Chart(currentVaccinated, {
             type: 'doughnut',
             data: {
